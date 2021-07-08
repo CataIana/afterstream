@@ -2,7 +2,7 @@
 Command that submits messages from a twitch chat to discord webhook. 
 A small script that I'm not really going to bother going with a highly detailed readme for.
 
-You'll need a webserver to run this, set that port in the systemd service you run the script with, the one I use has been provided.
+You'll need a webserver to run this, set that port in the systemd service you run the script with, the one I use has been provided. I run this behind an nginx reverse proxy, I highly recommend you do too.
 
 Make sure you install the dependencies in the requirements.txt
 
