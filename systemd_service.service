@@ -1,0 +1,14 @@
+[Unit]
+Description=Afterstream Handler
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=<working directory>
+ExecStart=/usr/bin/env python3 -m bottle -s paste -b localhost:<port> afterstream
+Restart=on-failure
+RestartSec=5s
+User=<user>
+
+[Install]
+WantedBy=default.target
