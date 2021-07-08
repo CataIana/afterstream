@@ -42,4 +42,4 @@ def index(channel):
     return get_request(channel, request)
 
 if __name__ == '__main__':
-    app.run(host='localhost', port=58496, debug=False)
+    app.run(host='localhost', port=port, debug=False)
