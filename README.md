@@ -3,8 +3,11 @@ Command that submits messages from a twitch chat to discord webhook.
 A small script that I'm not really going to bother going with a highly detailed readme for.
 
 You'll need a webserver to run this, set that port in the systemd service you run the script with, the one I use has been provided.
+
 Make sure you install the dependencies in the requirements.txt
+
 Fill in the settings file (make sure to rename it to `webhooks.json`)
+
 For the token part, set it to null in the settings and it won't be required as a query parameter, otherwise it will be required
 
 Command syntax for fossabot (I think nightbot just replaces customapi with urlfetch):
