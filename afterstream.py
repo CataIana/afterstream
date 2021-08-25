@@ -4,6 +4,8 @@ import json
 
 from discord.errors import Forbidden, HTTPException, NotFound
 
+#Command syntax for fossabot: @$(sender) $(customapi <url>/<streamername>?token=<token>&message=$(urlencode $(query))&sendername=$(urlencode $(sendername))&time=$(urlencode $(time Australia/Sydney ddd MMM Do YYYY, h:mma z))&uptime=$(urlencode $(uptime $(channel))))
+
 app = default_app()
 
 def get_request(channel, request):
