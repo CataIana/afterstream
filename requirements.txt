@@ -1,3 +1,4 @@
-paste
-bottle
-discord
+uvicorn
+aiohttp
+blacksheep
+disnake

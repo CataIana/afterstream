@@ -5,7 +5,7 @@ After=network.target
 [Service]
 Type=simple
 WorkingDirectory=<working directory>
-ExecStart=/usr/bin/env python3 -m bottle -s paste -b localhost:<port> afterstream
+ExecStart=/usr/bin/env uvicorn afterstream:app --port <port>
 Restart=on-failure
 RestartSec=5s
 User=<user>
